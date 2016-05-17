@@ -1,0 +1,54 @@
+@import "frames/resetter.css";
+@import "frames/fonts.css";
+div#mainwrap,div#mainwrap .container{width: 100%;}
+.header {background: #222222;color:#FFFFFF;width: 100%;}
+.header .container{height: 65px;}
+.header .icons{height: 100%;float: right;}
+.header .icons .icon{height: 100%;width: 48px;float: left;}
+.header .icons .icon a{display: block;height: 100%;}
+.header .icons .search{background: rgba(0, 0, 0, 0) url("../images/icon-search-white.svg") no-repeat scroll center center / 38px 38px;}
+.header .icons .love{background: rgba(0, 0, 0, 0) url("../images/icon-favorite-white.svg") no-repeat scroll center center / 38px 38px;}
+.header .icons .cart{background: rgba(0, 0, 0, 0) url("../images/icon-shopping-bag-white.svg") no-repeat scroll center center / 36px 38px;}
+.header .icons .cart a{text-align: center;color:#222222;line-height: 75px;font-family: "Gotham Medium";text-decoration: none;}
+.header .bergur{height: 100%;width:55px;float: left;background: rgba(0, 0, 0, 0) url("../images/icon-burger.svg") no-repeat scroll left center / 40px 35px; }
+.header .bergur a{display: block;height: 100%;}
+.header .logo{float:left;width:45%;height: 100%;}
+.header .logo a{height: 100%;display: block;padding: 19px 0;}
+.header .logo img{width: 63%;}
+.logo-tagline{text-align: center;margin: 0px 30px;font-family: "Gotham Book";font-size: 24px;letter-spacing: 3.33px;line-height: 30px;}
+.logo-tagline .logo{margin: 35px 0 20px 0;}
+.logo-tagline .logo img{width: 80%;}
+.logo-tagline .tagline{margin-bottom: 35px;}
+.chose-menu ul li{border-top:solid 1px #979797;}
+.chose-menu ul li:last-child{border-bottom: solid 1px #979797;}
+.chose-menu ul li a{font-family: "Gotham Medium";font-size: 30px;color:#222222;padding:25px 50px;display: block;text-decoration: none;}
+.chose-menu ul li.men a{background: url("../images/icon-men.svg") right 50px center no-repeat; background-size: 30px 40px;}
+.chose-menu ul li.women a{background: url("../images/icon-women.svg") right 50px center no-repeat; background-size: 30px 40px;}
+.chose-menu ul li.lifestyle a{background: url("../images/icon-lifestyle.svg") right 50px center no-repeat; background-size: 30px 40px;}
+.chose-menu ul li.homenliving a{background: url("../images/icon-sofa.svg") right 47px center no-repeat; background-size: 37px 40px;}
+.chose-menu ul li.flashsale a{background: url("../images/icon-clock-circular-outline.svg") right 47px center no-repeat; background-size: 35px 35px;}
+.download-apps{margin:65px 0 45px 0;}
+.download-apps img{width: 100%;}
+@media handheld,screen and (min-width:1024px) {
+    div#mainwrap {margin: 0 auto;width: 770px;color: #222222;border:solid 1px #222222;}
+}
+@media handheld, screen and (max-width: 480px){
+    .header .logo img{width: 100%;}
+}
+@media handheld, screen and (max-width: 360px){
+    .header .bergur{background-size: 30px 25px;}
+    .header .bergur{width: 40px;}
+    .header .logo a{padding: 23px 0;}
+    .header .icons{width: 40%;}
+    .header .icons .search{background-size: 30px 30px;}
+    .header .icons .love{background-size: 30px 30px;}
+    .header .icons .cart{background-size: 30px 31px;}
+    .header .icons .icon{width: 44px;}
+    .logo-tagline{line-height: 20px;}
+    .logo-tagline .tagline{font-size: 12px;}
+    .chose-menu ul li a{font-size: 14px;padding-left: 40px;}
+}
+@media handheld , screen and (max-width: 320px){
+    .header .bergur{width: 38px;background-size:28px 23px;}
+    .header .icons .icon{width: 38px;}
+}
