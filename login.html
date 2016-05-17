@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/frames/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <title>Login</title>
+</head>
+<body>
+<div id="mainwrap">
+    <div class="header">
+        <div class="container">
+            <div class="bergur"><a href="#"></a></div>
+            <div class="logo"><a href="#"><img src="assets/images/logo-vipplaza-white.png"></a></div>
+            <div class="icons">
+                <div class="icon cart"><a href="#">2</a></div>
+                <div class="icon love"><a href="#"></a></div>
+                <div class="icon search"><a href="#"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="login">
+            <h3 class="title">SILAHKAN LOGIN</h3>
+
+            <div class="container">
+                <div id="login" style="display: block;">
+                    <div class="form-login">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="email">ALAMAT EMAIL</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-7 showpassword">
+                                    <label>
+                                        <input type="checkbox"> TAMPILKAN PASSWORD
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xs-5 forgotpassword">
+                                    <a href="" class="">LUPA PASSWORD ?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn bg-black btn-form">LOGIN</button>
+                        </form>
+                    </div>
+                    <div class="below-form">
+                        <div class="link">
+                            <div>ANDA BELUM MEMPUNYAI AKUN ?</div>
+                            <a href="#" id="link-register">REGISTER</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="register" style="display: none;">
+                    <div class="form-login form-register">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="regemail">ALAMAT EMAIL</label>
+                                <input type="email" class="form-control" id="regemail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="regpassword">PASSWORD</label>
+                                <input type="password" class="form-control" id="regpassword" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-7 showpassword">
+                                    <label>
+                                        <input type="checkbox"> TAMPILKAN PASSWORD
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn bg-black btn-form pull-left">PRIA</button>
+                            <button type="submit" class="btn bg-black btn-form pull-right">WANITA</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                    <div class="below-form">
+                        <div class="link">
+                            <div>ANDA SUDAH MEMPUNYAI AKUN ?</div>
+                            <a href="#" id="link-login">LOGIN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-login">
+                    <h3>Atau Login dengan</h3>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 gg">
+                            <a href="#" class="google-plus pull-right"></a>
+                        </div>
+                        <div class="col-md-6 col-xs-6 fb">
+                            <a href="#" class="facebook pull-left"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
