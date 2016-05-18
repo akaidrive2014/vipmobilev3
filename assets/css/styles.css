@@ -57,12 +57,52 @@ label{margin-bottom: 5px;}
 .login .social-login .facebook{background: url("../images/icon-fb.png") left center no-repeat;width: 100%;height: 80px;background-size: 145px;}
 /*end of login / register*/
 
+/*product list*/
+.catalog-category-view .product-tools-display{text-align: center;background: #E6E6E6;position: relative;}
+.catalog-category-view .product-tools-display div.active{background: #FFFFFF;}
+.catalog-category-view .product-tools-display .sort{border-bottom: solid 1px #979797;border-right: solid 1px #979797;}
+.catalog-category-view .product-tools-display .tool-box{position: absolute;width: 100%;background: #FFFFFF;z-index: 9;padding: 0 30px;display: none;}
+.catalog-category-view .product-tools-display .tool-box ul.listsort li{text-align: left;border-bottom:solid 1px #979797;}
+.catalog-category-view .product-tools-display .tool-box ul.listsort li:last-child{text-align: left;border:none;}
+.catalog-category-view .product-tools-display .tool-box ul.listsort li a{background:url("../images/icon-circle.svg") no-repeat left 15px center / 20px 20px ;font-family: "Gotham Medium";color:#4A4A4A;letter-spacing: 1px;font-size: 12px;padding: 20px 45px;display: block;text-decoration: none;}
+.catalog-category-view .product-tools-display .tool-box ul.listsort li a.active{background:url("../images/icon-circle-correct.svg") no-repeat left 15px center / 20px 20px ;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .title{background: #222222 url("../images/icon-collapse.svg") no-repeat scroll right 15px center / 15px 20px;font-family: "Gotham Book";color:#FFFFFF;padding: 15px;cursor: pointer;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point{margin: 25px 0;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Category ol{text-align: left;padding: 20px 20px;border:solid 1px #979797;border-top:none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Category ol li a{padding: 6px 0;display: block;font-family: "Gotham Book"; color:#4A4A4A;font-size: 12px;text-decoration: none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point ul{display: none;}
+.catalog-category-view .product-tools-display .filter{border-bottom: solid 1px #979797;}
+.catalog-category-view .product-tools-display .sort .title a,.catalog-category-view .product-tools-display .filter .title a{display:block;padding:20px;font-family: "Gotham Book";font-size:24px;letter-spacing: 4px;text-decoration:none;color:#4A4A4A;}
+.catalog-category-view .product-tools-display .sort .title a{background: url("../images/icon-arrow-down-filter.svg") no-repeat scroll right 2px center / 16px 10px}
+.catalog-category-view .product-tools-display .filter .title a{background: url("../images/icon-filter.svg") no-repeat scroll left 10px center / 16px 13px}
+.catalog-category-view .product-list .item{margin-bottom: 20px;}
+.catalog-category-view .product-list .item .image img{width: 100%;}
+.catalog-category-view .product-list .item .info{font-family: "Gotham Book";color:#4A4A4A;position:relative;margin-top:10px;}
+.catalog-category-view .product-list .item .info .discount{position: absolute;right: 0;bottom: 0;border:solid 1px #979797;padding: 5px;font-size:12px;font-family: "Gotham Medium";line-height: 13px;}
+.catalog-category-view .product-list .item .info .product-name{font-size:12px;letter-spacing: 1px;}
+.catalog-category-view .product-list .item .info .product-price{margin-top: 10px;}
+.catalog-category-view .product-list .item .info .product-price .price-box{height: 30px;position:relative;letter-spacing: 1px;}
+.catalog-category-view .product-list .item .info .product-price .price-box .price-label{display: none;}
+.catalog-category-view .product-list .item .info .product-price .price-box .old-price{position:absolute;bottom: 0;}
+.catalog-category-view .product-list .item .info .product-price .price-box .special-price{position:absolute;top: 0;}
+.catalog-category-view .product-list .item .info .product-price .price-box .old-price .price{font-size: 11px;text-decoration:line-through;}
+.catalog-category-view .product-list .item .info .product-price .price-box .special-price .price{font-size: 13px;}
+.breadcrumb{background:#E6E6E6;margin: 20px 0;border-radius:0;}
+.breadcrumb li{color: #4A4A4A;font-family: "Gotham Medium";font-size: 12px;}
+.breadcrumb li a{font-family: "Gotham Book";color:#4A4A4A;text-decoration: none;}
+/*end of product list*/
+
 
 @media handheld,screen and (min-width:1024px) {
     div#mainwrap {margin: 0 auto;width: 770px;color: #222222;border:solid 1px #222222;}
 }
 @media handheld, screen and (max-width: 480px){
     .header .logo img{width: 100%;}
+    /*product list*/
+    .catalog-category-view .product-tools-display .sort .title a, .catalog-category-view .product-tools-display .filter .title a{font-size:14px;}
+    .catalog-category-view .product-tools-display .tool-box ul.listsort li a,.catalog-category-view .product-tools-display .tool-box ul.listsort li a.active{background-size: 15px 15px;}
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .title{background-size:9px 15px;}
+    /*/end of product list*/
 }
 @media handheld, screen and (max-width: 360px){
     .header .bergur{background-size: 30px 25px;}
@@ -80,10 +120,23 @@ label{margin-bottom: 5px;}
     .login .form-login .forgotpassword{padding-top: 7px;}
     .social-login .google-plus{background-position: left center;}
     .social-login .facebook{background-position: right center;}
+
+    /*product list*/
+    .catalog-category-view .product-tools-display .sort .title a, .catalog-category-view .product-tools-display .filter .title a{font-size:11px;}
+    .catalog-category-view .product-tools-display .sort{padding-left: 0;}
+    .catalog-category-view .product-tools-display .filter{padding-right: 0;}
+    .catalog-category-view .product-tools-display .tool-box{padding: 0 20px;}
+    .catalog-category-view .product-tools-display .sort .title a{background-size: 13px 9px;}
+    .catalog-category-view .product-list .item,div#mainwrap .container{padding-left: 10px;padding-right: 10px;}
+    .catalog-category-view .product-list .item .info .product-name{font-size:10px;}
+    .catalog-category-view .product-list .item .info .product-price .price-box .old-price .price{font-size: 11px;}
+    .catalog-category-view .product-list .item .info .product-price .price-box .special-price .price{font-size: 12px;}
+    /*/end of product list*/
 }
 @media handheld , screen and (max-width: 320px){
     .header .bergur{width: 38px;background-size:28px 23px;}
     .header .icons .icon{width: 38px;}
     .social-login [class*="col"].gg{padding: 0 5px 0 15px;}
     .social-login [class*="col"].fb{padding: 0 15px 0 5px;}
+    .catalog-category-view .product-tools-display .sort .title a, .catalog-category-view .product-tools-display .filter .title a{font-size:8px;}
 }
