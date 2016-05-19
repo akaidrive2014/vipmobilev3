@@ -36,13 +36,11 @@ $(function(){
         $('.filter-point h1').find("i").addClass('fa-plus-circle');
         $('.filter-point h1').find("i").removeClass('fa-minus-circle');
         if ($(this).parent().find('ul').is(":visible")) {
-            $(this).parent().find('ul').slideUp();
-            $(this).find("i").addClass('fa-plus-circle');
-            $(this).find("i").removeClass('fa-minus-circle');
+            $(this).removeClass('active');
         } else {
             $(this).parent().find('ul').slideDown();
-            $(this).find("i").removeClass('fa-plus-circle');
-            $(this).find("i").addClass('fa-minus-circle');
+            $(".filter-point h1").removeClass('active');
+            $(this).addClass('active');
         }
     });
 

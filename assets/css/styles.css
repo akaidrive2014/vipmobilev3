@@ -67,9 +67,23 @@ label{margin-bottom: 5px;}
 .catalog-category-view .product-tools-display .tool-box ul.listsort li a{background:url("../images/icon-circle.svg") no-repeat left 15px center / 20px 20px ;font-family: "Gotham Medium";color:#4A4A4A;letter-spacing: 1px;font-size: 12px;padding: 20px 45px;display: block;text-decoration: none;}
 .catalog-category-view .product-tools-display .tool-box ul.listsort li a.active{background:url("../images/icon-circle-correct.svg") no-repeat left 15px center / 20px 20px ;}
 .catalog-category-view .product-tools-display .tool-box .filter-product-row .title{background: #222222 url("../images/icon-collapse.svg") no-repeat scroll right 15px center / 15px 20px;font-family: "Gotham Book";color:#FFFFFF;padding: 15px;cursor: pointer;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .title.active{background: #222222 url("../images/icon-expand.svg") no-repeat scroll right 15px center / 20px 15px;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Category .title{background-image: none;}
 .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point{margin: 25px 0;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point ul li a{font-family: "Gotham Book";text-decoration: none;}
 .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Category ol{text-align: left;padding: 20px 20px;border:solid 1px #979797;border-top:none;}
 .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Category ol li a{padding: 6px 0;display: block;font-family: "Gotham Book"; color:#4A4A4A;font-size: 12px;text-decoration: none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Brand ul{max-height:200px;overflow-y: auto;text-align: left;padding: 20px 0;border:solid 1px #979797;border-top:none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Brand ul li a{padding: 6px 20px;display: block;font-family: "Gotham Book"; color:#4A4A4A;font-size: 12px;text-decoration: none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Brand ul li a.active{background: #9F9F9F;color:#FFFFFF;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul{padding: 20px 10px;border:solid 1px #979797;border-top:none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul li{float:left;margin:6px 11px;width: 16.6667%;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul li a{color:#222222;background:#d6d6d6;float: left;font-size: 10px;height: 30px;padding: 0;text-align: center;width: 100%;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul li a div.point-filter{display: table-cell;height: 30px;vertical-align: middle;width: 30px;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul {border:solid 1px #979797;border-top:none;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul li {float: left;margin: 6px 11px;width: 30%;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul li a{color:#222222;background:#d6d6d6;float: left;font-size: 10px;height: 30px;padding: 0; text-align: center;  width: 100%;}
+.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul.child-1 li a div.point-filter{display: table-cell;height: 30px;vertical-align: middle;}
 .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point ul{display: none;}
 .catalog-category-view .product-tools-display .filter{border-bottom: solid 1px #979797;}
 .catalog-category-view .product-tools-display .sort .title a,.catalog-category-view .product-tools-display .filter .title a{display:block;padding:20px;font-family: "Gotham Book";font-size:24px;letter-spacing: 4px;text-decoration:none;color:#4A4A4A;}
@@ -102,6 +116,9 @@ label{margin-bottom: 5px;}
     .catalog-category-view .product-tools-display .sort .title a, .catalog-category-view .product-tools-display .filter .title a{font-size:14px;}
     .catalog-category-view .product-tools-display .tool-box ul.listsort li a,.catalog-category-view .product-tools-display .tool-box ul.listsort li a.active{background-size: 15px 15px;}
     .catalog-category-view .product-tools-display .tool-box .filter-product-row .title{background-size:9px 15px;}
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .title.active{background-size:15px 9px;}
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul li,
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul li{margin: 6px;}
     /*/end of product list*/
 }
 @media handheld, screen and (max-width: 360px){
@@ -131,6 +148,9 @@ label{margin-bottom: 5px;}
     .catalog-category-view .product-list .item .info .product-name{font-size:10px;}
     .catalog-category-view .product-list .item .info .product-price .price-box .old-price .price{font-size: 11px;}
     .catalog-category-view .product-list .item .info .product-price .price-box .special-price .price{font-size: 12px;}
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul li,
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul li{margin: 5px;}
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .title.active{background-size:15px 9px;}
     /*/end of product list*/
 }
 @media handheld , screen and (max-width: 320px){
@@ -139,4 +159,5 @@ label{margin-bottom: 5px;}
     .social-login [class*="col"].gg{padding: 0 5px 0 15px;}
     .social-login [class*="col"].fb{padding: 0 15px 0 5px;}
     .catalog-category-view .product-tools-display .sort .title a, .catalog-category-view .product-tools-display .filter .title a{font-size:8px;}
+    .catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Size ul li,.catalog-category-view .product-tools-display .tool-box .filter-product-row .filter-point.filter-by-Color ul li{margin: 4px;}
 }
